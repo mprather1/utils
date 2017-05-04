@@ -7,7 +7,7 @@ if [ -z $1 ]; then
 fi
 
 while true; do
-  docker logs --tail=50 -f xbpf-$1
+  docker logs --tail=50 -f $1
   echo --------
   echo $1: lost logs, waiting 5 seconds \($(date -u)\)
   echo --------
